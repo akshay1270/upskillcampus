@@ -1,0 +1,40 @@
+{
+  "target_column": "Cost of Cultivation (`/Hectare) C2",
+  "features": [
+    "State",
+    "Crop",
+    "Variety"
+  ],
+  "encoders": {
+    "State": [
+      "Andhra Pradesh",
+      "Bihar",
+      "Gujarat",
+      "Haryana",
+      "Karnataka",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Orissa",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Uttar Pradesh",
+      "West Bengal"
+    ],
+    "Crop": [
+      "ARHAR",
+      "COTTON",
+      "GRAM",
+      "GROUNDNUT",
+      "MAIZE",
+      "MOONG",
+      "PADDY",
+      "RAPESEED AND MUSTARD",
+      "SUGARCANE",
+      "WHEAT"
+    ],
+    "Variety": [
+      "nan"
+    ]
+  }
+}

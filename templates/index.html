@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Agriculture Crop Production Predictor</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- ✅ Correct Flask path for CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Agriculture Crop Production Predictor</h1>
+    <p>Enter details and click <strong>Predict</strong>.</p>
+
+    <div id="form-area">
+      <form id="predict-form" onsubmit="return false;">
+        <div id="fields"></div>
+        <button id="predict-btn" type="button">Predict</button>
+      </form>
+    </div>
+
+    <div id="result" class="card" style="display:none;">
+      <h2>Prediction</h2>
+      <p id="pred-text"></p>
+    </div>
+
+    <div id="notes" class="notes">
+      <p>Note: This is a simple model trained on available CSVs. Results are indicative.</p>
+    </div>
+  </div>
+
+  <!-- ✅ Correct Flask path for JS -->
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
